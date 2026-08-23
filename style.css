@@ -1,0 +1,171 @@
+:root {
+  --bg-color: #f4f7f6;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --primary-color: #2c3e50;
+  --red-color: #ff3b30;
+  --yellow-color: #ffcc00;
+  --green-color: #34c759;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.shapes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.shapes-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  gap: 1rem;
+}
+
+.shape {
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.red-x { background-color: var(--red-color); }
+.yellow-line { background-color: var(--yellow-color); color: #000; }
+.green-arrow { background-color: var(--green-color); }
+
+/* Semáforo Simulador */
+.traffic-light-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.traffic-light {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0.3;
+}
+
+.symbol {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estado Ativo das Luzes */
+.light.red.active {
+  background-color: var(--red-color);
+  opacity: 1;
+  box-shadow: 0 0 25px var(--red-color);
+}
+
+.light.yellow.active {
+  background-color: var(--yellow-color);
+  opacity: 1;
+  box-shadow: 0 0 25px var(--yellow-color);
+}
+
+.light.yellow.active .symbol {
+  color: #000;
+}
+
+.light.green.active {
+  background-color: var(--green-color);
+  opacity: 1;
+  box-shadow: 0 0 25px var(--green-color);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}

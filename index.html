@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessibilidade no Trânsito: Semáforo Geométrico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Semáforos Geométricos & Acessibilidade</h1>
+    <p>Inclusão e segurança para condutores e pedestres daltônicos</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>As Dificuldades de Pessoas Daltônicas no Trânsito</h2>
+      <p>O daltonismo (ou Discromatopsia) afeta milhões de pessoas no mundo, dificultando a distinção de certos espectros de cores — principalmente entre o <strong>vermelho e o verde</strong>.</p>
+      <p>Nos semáforos tradicionais, a única referência além da cor é a posição (topo, meio e base). Porém, em situações desfavoráveis como <strong>neblina, chuva intensa, direção noturna ou iluminação fraca</strong>, identificar qual lâmpada está acessa torna-se uma tarefa perigosa, aumentando o risco de acidentes graves.</p>
+    </section>
+
+    <section class="card">
+      <h2>A Solução: Semáforo Geométrico</h2>
+      <p>A inclusão de formas universais dentro ou na moldura das luzes elimina a dependência exclusiva da cor para sinalizar a ação necessária:</p>
+      
+      <ul class="shapes-list">
+        <li>
+          <span class="shape red-x">✖</span>
+          <div>
+            <strong>Vermelho (X):</strong> Indica parada obrigatória. O formato de "X" transmite diretamente a ideia de restrição, interrupção e perigo.
+          </div>
+        </li>
+        <li>
+          <span class="shape yellow-line">━</span>
+          <div>
+            <strong>Amarelo (Linha Reta):</strong> Indica atenção/transição. A barra horizontal remete a um sinal de pausa momentânea ou alerta.
+          </div>
+        </li>
+        <li>
+          <span class="shape green-arrow">▲</span>
+          <div>
+            <strong>Verde (Seta para Cima):</strong> Indica permissão para prosseguir. A seta aponta a direção do fluxo livre e movimento.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card sim-section">
+      <h2>Simulador Interativo</h2>
+      <p>Clique nos botões abaixo para alternar o sinal e ver o conceito geométrico funcionando na prática:</p>
+
+      <div class="traffic-light-container">
+        <div class="traffic-light">
+          <div class="light red" id="light-red">
+            <span class="symbol">✖</span>
+          </div>
+          <div class="light yellow" id="light-yellow">
+            <span class="symbol">━</span>
+          </div>
+          <div class="light green" id="light-green">
+            <span class="symbol">▲</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button onclick="changeLight('red')">Sinal Vermelho</button>
+          <button onclick="changeLight('yellow')">Sinal Amarelo</button>
+          <button onclick="changeLight('green')">Sinal Verde</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto Educativo sobre Design Universal e Mobilidade Urbana Inclusiva.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
