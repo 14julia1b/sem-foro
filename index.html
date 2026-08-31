@@ -81,3 +81,45 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!-- Fotos do projeto -->
+<section class="fotos-projeto">
+    <h2>Fotos do Projeto</h2>
+
+    <div class="galeria">
+        <img src="foto1.jpg" alt="Maquete do projeto - vista 1">
+        <img src="foto2.jpg" alt="Maquete do projeto - vista 2">
+    </div>
+</section>
+
+<style>
+.fotos-projeto {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.fotos-projeto h2 {
+    margin-bottom: 25px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 45%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+    .galeria img {
+        width: 100%;
+    }
+}
+</style>
